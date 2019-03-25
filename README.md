@@ -1,6 +1,8 @@
 # ApexTracker
 Simple Stat Tracker for Apex Legends
 
+This uses C# .Net and runs on Visual Studio.
+
 A Simple console program that displays and allows you to change values.
 
 Simply open the program in Visual Studio and run the program.
