@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace ApexTracker
 {
 
-    //class legend is basically setting up the data to be viewed when the user in the primary program requests to view the data.
+    //class legend is sets up the data to be viewed when the user in the primary program requests to view the data.
     //viewing the data is done by pressing 1 on the prompt. The data is also set up to split into each line rather than one giant block.
     //character being the avatar the player is using, and all the other values from Kills, to Times Placed in Top 3 being the Top 3
     //being the total values the player using the program has achieved. These values can be updated in the data entry part of the program.

@@ -12,7 +12,7 @@ namespace ApexTracker
         static void Main(string[] args)
         {
 
-            //Used a do while loop to encompass the menu with if and else if statements to determine what to do.
+            //Used a do while loop to encompass the menu with if and else if statements to determine what action to take.
             //Pressing 1 shows all the data while pressing 2 prompts you for the row to change followed by the column and then finally the value to change.
 
             Console.WriteLine("Press 1 to View Data, or Press 2 to Enter Data");
