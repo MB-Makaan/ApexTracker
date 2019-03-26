@@ -11,10 +11,17 @@ namespace ApexTracker
     {
         static void Main(string[] args)
         {
+
+            //Used a do while loop to encompass the menu with if and else if statements to determine what to do.
+            //Pressing 1 shows all the data while pressing 2 prompts you for the row to change followed by the column and then finally the value to change.
+
             Console.WriteLine("Press 1 to View Data, or Press 2 to Enter Data");
             var input = Console.ReadLine();
             do
             {
+
+                //if statement to set up showing the data from the CSV written out as a list.
+
                 if (input == "1")
                 {
                     foreach (var w in File.ReadAllLines("ApexStats.csv")                                           
@@ -32,11 +39,10 @@ namespace ApexTracker
                         Console.WriteLine(w.gamesPlayed);
                         Console.WriteLine(w.winsWithFullSquad);
                         Console.WriteLine(w.timesPlacedTopThree);
-                    }
-
-
-
+                    }                                       
                 }
+
+                //else if statement to set up entering and overwriting the data.
 
                 else if (input == "2")
                 {
@@ -69,6 +75,9 @@ namespace ApexTracker
             }
         }
 
+        //Writelines to prompt the user for each command. After selecting to enter data it asks the user what row to modify while selecting the row.
+        //Following that it does the same with columns and then the value itself, allowing the user to change the value.
+
         private static void AskUserQuestions(string[,] table)
         {
             Console.WriteLine("What row would you like to modify?");
@@ -79,6 +88,8 @@ namespace ApexTracker
             string valueToModify = Console.ReadLine();
             table[rowToModify, columnToModify] = valueToModify;
         }
+
+        //This accomplishes the writing and saving to the CSV allowing you to change values which outputs to the bin/debug as ApexStats.csv
 
         private static string[,] ReadFileToTable()
         {
