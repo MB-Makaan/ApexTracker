@@ -80,9 +80,9 @@ namespace ApexTracker
 
         private static void AskUserQuestions(string[,] table)
         {
-            Console.WriteLine("What row would you like to modify?");
+            Console.WriteLine("What row would you like to modify? 1-8");
             int rowToModify = int.Parse(Console.ReadLine());
-            Console.WriteLine("What column would you like to modify?");
+            Console.WriteLine("What column would you like to modify? 1-10");
             int columnToModify = int.Parse(Console.ReadLine());
             Console.WriteLine("What would you like to set the value to?");
             string valueToModify = Console.ReadLine();
